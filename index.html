@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>This is my first website</h1>
+        </header>
+
+        <article>
+            <section>
+                <h2>Welcome</h2>
+            </section>
+
+            <section>
+                <figure>
+                    <img src="https://placekitten.com/200/200" alt="a random cat">
+                    <figcaption>Fig 1. A random cat</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <details>
+                    <summary>Hobbies</summary>
+                </details>
+            </section>
+
+            <dialog id="mydialog">
+                This is a dialog
+                <ul>
+                    <li>Swimming</li>
+                    <li>Coding</li>
+                    <li>Music</li>
+                    <li>Memeing</li>
+                </ul>
+                <a href="javascript:mydialog.removeAttribute('open')">close</a>
+            </dialog>
+
+            <a href="javascript:document.querySelector('#mydialog').setAttribute('open', true)">
+                Open Dialog
+            </a>
+        </article>
+    </body>
+</html>
